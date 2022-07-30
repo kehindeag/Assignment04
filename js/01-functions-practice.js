@@ -31,3 +31,20 @@ function findModulus(num, numof) {
 findModulus(4, 10);
 
 //STEP 5
+
+arrayNum = [];
+let sum = 0;
+function pickNumber() {
+  do {
+    num = parseInt(prompt("Pick a number"));
+    arrayNum.push(num);
+    add = prompt("you want to add more numbers? y/n");
+  } while (add === "y");
+  return arrayNum;
+}
+ab = pickNumber();
+
+for (a of ab) {
+  sum += a;
+}
+console.log(`sum of  the array of ${ab} is ${sum}`);
